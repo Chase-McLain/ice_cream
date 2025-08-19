@@ -1,8 +1,142 @@
 console.log("rat")
 
+let shopItems = [
+  {
+    item: 'gumCream',
+    price: 7.99,
+    qty: 0
+  },
+  {
+    item: 'comboCream',
+    price: 7.99,
+    qty: 0
+  },
+  {
+    item: 'beefCream',
+    price: 7.99,
+    qty: 0
+  },
+  {
+    item: 'gumShoe',
+    price: 2,
+    qty: 0
+  },
+  {
+    item: 'hands',
+    price: .10,
+    qty: 0
+  },
+  {
+    item: 'beefBox',
+    price: 1,
+    qty: 0
+  },
+  {
+    item: 'gum',
+    price: .50,
+    qty: 0
+  },
+  {
+    item: 'geef',
+    price: 11.99,
+    qty: 0
+  },
+  {
+    item: 'beef',
+    price: 5,
+    qty: 0
+  }
+]
+
+function purchase(itemType) {
+  for (let i = 0; i < shopItems.length; i += 1) {
+    let itemPurchase = shopItems[i]
+    if (itemPurchase.item == itemType) {
+      itemPurchase.qty += 1
+      console.log(itemType, itemPurchase.qty)
+    }
+  }
+}
 
 
-let shopItems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let shopFlavors = [
+//   {
+//     flavor: gumCream,
+//     price: 7.99,
+//     qty: 0
+//   },
+//   {
+//     flavor: comboCream,
+//     price: 7.99,
+//     qty: 0
+//   },
+//   {
+//     flavor: beefCream,
+//     price: 7.99,
+//     qty: 0
+//   }
+// ]
+
+// let shopContainers = [
+//   {
+//     container: gumShoe,
+//     price: 2,
+//     qty: 0
+//   },
+//   {
+//     container: hands,
+//     price: .10,
+//     qty: 0
+//   },
+//   {
+//     container: beefBox,
+//     price: 1,
+//     qty: 0
+//   }
+// ]
+
+// let shopToppings = [
+//   {
+//     topping: gum,
+//     price: .50,
+//     qty: 0
+//   },
+//   {
+//     topping: geef,
+//     price: 11.99,
+//     qty: 0
+//   },
+//   {
+//     topping: beef,
+//     price: 5,
+//     qty: 0
+//   }
+// ]
+
 
 
 
