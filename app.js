@@ -56,7 +56,42 @@ function purchase(itemType) {
       console.log(itemType, itemPurchase.qty)
     }
   }
+  addItemToCart()
+
 }
+
+let cartItems = document.getElementById('cart')
+
+function addItemToCart() {
+  cartItems.innerHTML = ''
+  for (let i = 0; i < shopItems.length; i += 1) {
+    let cartItem = shopItems[i]
+    if (cartItem.qty >= 1) {
+      cartItems.innerHTML += `
+        <div class="col">
+          <p> ${cartItem.item} x ${cartItem.qty} -- $${cartItem.qty * cartItem.price}</p>
+        </div>`
+    }
+  }
+  cartprice()
+}
+
+let cartTotal = document.getElementById('cartTotal')
+
+function cartprice() {
+  cartTotal.innerHTML = 'TOTAL:'
+  let totalPrice = 0
+  for (let i = 0; i < shopItems.length; i += 1) {
+    let cartItem = shopItems[i]
+    totalPrice += cartItem.qty * cartItem.price
+  }
+  cartTotal.innerHTML = `
+    <div>
+      <p> Total: $${totalPrice}$</p>
+    </div>`
+
+}
+
 
 
 
