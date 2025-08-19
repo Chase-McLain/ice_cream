@@ -1,0 +1,21 @@
+body {
+  background-color: blanchedalmond;
+}
+
+nav {
+  font-family: cursive;
+  background-color: blanchedalmond;
+}
+
+button:active {
+  background-color: lime;
+}
+
+.card-img {
+  object-fit: contain;
+}
+
+h3 {
+  font-weight: bold;
+  -webkit-text-fill-color: chocolate;
+}
